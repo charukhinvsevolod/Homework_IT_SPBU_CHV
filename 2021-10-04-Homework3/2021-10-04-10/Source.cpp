@@ -11,6 +11,11 @@ int main(int argc, char* argv[])
 	cin >> a >> b;
 	cout << "Exit data:" << endl;
 
+	if (a <= 0 && 0 <= b)
+	{
+		cout << 0 << " ";
+	}
+
 	if (a <= 1 && 1 <= b)
 	{
 		cout << 1 << " ";
@@ -18,7 +23,7 @@ int main(int argc, char* argv[])
 
 	for (int i = a; i <= b; ++i)
 	{
-		for (int j = 1; j <= i / 2; ++j) 
+		for (int j = 1; j <= i / 2; ++j)
 		{
 			if (j * j == i)
 			{
