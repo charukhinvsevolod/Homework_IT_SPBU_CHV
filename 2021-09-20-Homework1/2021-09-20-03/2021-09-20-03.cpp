@@ -9,7 +9,7 @@ int main(int argc, char* argv) {
 	cout << "Enter data:" << endl;
 	cin >> n >> k;
 	cout << "Exit data:" << endl;
-	cout << n % k<< endl;
+	cout << n % k << endl;
 
 	return EXIT_SUCCESS;
 }

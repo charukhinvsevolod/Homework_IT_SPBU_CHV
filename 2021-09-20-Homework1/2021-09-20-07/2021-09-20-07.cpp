@@ -5,7 +5,7 @@ using namespace std;
 int main(int argc, char* argv) {
 	int a = 0;
 	int b = 0;
-	int k = 0;;
+	int k = 0;
 
 	cout << "Enter data:" << endl;
 	cin >> a >> b;

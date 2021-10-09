@@ -7,24 +7,33 @@ int main(int argc, char* argv[])
 {
 	int n = 0;
 	int k = 0;
-	double c = 0;
-	int C = 0;
+	int f_n = 0;
+	int f_k = 0;
+	int f_n_k = 0;
 
 	cout << "Enter data:" << endl;
 	cin >> n >> k;
 	cout << "Exit data:" << endl;
 
-	c = 1;
-	C = 1;
-
-	for (int i = 1; i <= n - k; i++)
+	f_n = 1;
+	for (int i = 1; i <= n; ++i)
 	{
-		double j = i;
-		c *= (k + j) / j;
+		f_n *= i;
 	}
 
-	C = round(c);
-	cout << C << endl;
+	f_k = 1;
+	for (int i = 1; i <= k; ++i)
+	{
+		f_k *= i;
+	}
+
+	f_n_k = 1;
+	for (int i = 1; i <= n - k; ++i)
+	{
+		f_n_k *= i;
+	}
+
+	cout << f_n / (f_k * f_n_k) << endl;
 
 	return EXIT_SUCCESS;
 }
