@@ -4,7 +4,7 @@ using namespace std;
 
 int main(int arc, char* argv[])
 {
-	int a[100];
+	int a[100]{0};
 	int n = 0;
 	int sum = 0;
 	int prn = 0;
